@@ -19,10 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        _xSpeed = Input.GetAxis("InputX");
-        _ySpeed = Input.GetAxis("InputY");
+        _xSpeed = Input.GetAxis(InputX);
+        _ySpeed = Input.GetAxis(InputY);
 
-        _rigidbody2D.velocity = new Vector2(_xSpeed, _xSpeed) * speed;
+        _rigidbody2D.velocity = new Vector2(_xSpeed, _ySpeed) * speed;
     }
 
 
